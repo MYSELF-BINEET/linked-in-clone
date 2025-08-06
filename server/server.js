@@ -16,7 +16,7 @@ const errorHandler = require('./middleware/errorHandler');
 const app = express();
 
 // Security middleware
-app.use(helmet());
+// app.use(helmet());
 app.use(cors({
   origin: "https://linked-in-clone-22zv.vercel.app",
   credentials: true
@@ -55,6 +55,16 @@ app.get('/api/health', (req, res) => {
     timestamp: new Date().toISOString()
   });
 });
+
+app.get("/test-cookie", (req, res) => {
+  res.cookie("test", "123", {
+    httpOnly: true,
+    secure: true,
+    sameSite: "none"
+  });
+  res.json({ message: "Cookie set" });
+});
+
 
 // Error handling middleware (must be last)
 app.use(errorHandler);

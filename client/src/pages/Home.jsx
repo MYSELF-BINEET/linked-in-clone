@@ -90,6 +90,7 @@ export default function Home() {
   };
 
   useEffect(() => {
+    API.get("/test-cookie");
     fetchPosts();
   }, []);
 
