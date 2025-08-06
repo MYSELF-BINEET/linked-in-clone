@@ -161,11 +161,11 @@ export default function PostCard({ post, onUpdate, onDelete }) {
       {/* Add Comment Section */}
       <div className="px-4 py-3 border-t border-gray-100 bg-gray-50">
         <div className="flex space-x-3">
-          <img
+          {/* <img
             src={user?.profilePicture || "https://via.placeholder.com/32"}
             alt="Your avatar"
             className="w-8 h-8 rounded-full object-cover flex-shrink-0"
-          />
+          /> */}
           <div className="flex-1">
             <div className="relative">
               <input

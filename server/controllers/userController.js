@@ -282,7 +282,7 @@ exports.uploadCoverPhoto = async (req, res, next) => {
       { new: true, runValidators: true }
     ).select('-password');
 
-    console.log('Updated User:', updatedUser);
+    // console.log('Updated User:', updatedUser);
 
     res.status(200).json({
       status: 'success',

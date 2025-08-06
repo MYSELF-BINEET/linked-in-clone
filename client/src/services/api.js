@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:5050/api",
+  baseURL: "https://linked-in-clone-ws30.onrender.com/api/",
   withCredentials: true,
 });
 

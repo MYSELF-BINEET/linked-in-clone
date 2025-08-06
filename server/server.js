@@ -18,7 +18,7 @@ const app = express();
 // Security middleware
 app.use(helmet());
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin: "https://linked-in-clone-22zv.vercel.app",
   credentials: true
 }));
 
